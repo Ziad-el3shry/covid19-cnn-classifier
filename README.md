@@ -11,7 +11,7 @@ This project uses a **Convolutional Neural Network (CNN)** built with **TensorFl
 
 ## 🔍 Preview
 
-![App Preview](app_preview.png)
+![App Preview](app_preview.jpeg)
 
 ---
 
