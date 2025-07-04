@@ -77,18 +77,25 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run app.py
-```bash
-💡 Features
-    📤 Upload image interface
-    🧠 Real-time deep learning prediction
-    📊 Confidence visualization
-    🎨 Dark-themed professional UI
-    ℹ️ About tab with project details
+## 💡 Features
 
-⚠️ Disclaimer
-    This app is for educational and research purposes only. It is not a medical diagnostic tool and should not be used for clinical decisions.
+- 📤 Upload image interface  
+- 🧠 Real-time deep learning prediction  
+- 📊 Confidence visualization  
+- 🎨 Dark-themed professional UI  
+- ℹ️ About tab with project details
 
-👨‍💻 Developed by
-    Ziad Attia
-    📧 Email: ziadel3shry123@gmail.com
-    🔗 Linkedin:https://www.linkedin.com/in/ziad-attia-4b1843241/
+---
+
+## ⚠️ Disclaimer
+
+This app is for **educational and research purposes only**.  
+It is **not a certified medical diagnostic tool** and should not be used for clinical decisions.
+
+---
+
+## 👨‍💻 Developed by
+
+**Ziad Attia**  
+📧 Email: ziadel3shry123@gmail.com  
+🔗 LinkedIn: [Ziad Attia](https://www.linkedin.com/in/ziad-attia-4b1843241/)
