@@ -57,8 +57,7 @@ covid19-cnn-classifier/
 ├── packages.txt
 ├── README.md
 ├── .gitignore
-└── images/
-└── app_preview.png
+├── app_preview.png
 ---
 
 ## 📦 Installation & Run Locally
@@ -77,6 +76,7 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run app.py
+```
 ## 💡 Features
 
 - 📤 Upload image interface  
