@@ -50,12 +50,12 @@ This project uses a **Convolutional Neural Network (CNN)** built with **TensorFl
 
 covid19-cnn-classifier/
 │
-├── app.py # Streamlit app code
-├── covid19_cnn_model.h5 # Trained CNN model
-├── requirements.txt # Python package dependencies
-├── runtime.txt # Python version for deployment
-├── packages.txt # System-level packages for deployment
-├── README.md # This file
+├── app.py
+├── covid19_cnn_model.h5
+├── requirements.txt
+├── runtime.txt
+├── packages.txt
+├── README.md
 ├── .gitignore
 └── images/
 └── app_preview.png
@@ -77,6 +77,7 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run app.py
+```bash
 💡 Features
     📤 Upload image interface
     🧠 Real-time deep learning prediction
