@@ -1,93 +1,93 @@
-# COVID-19 Chest X-ray Image Classifier 🧠🩻
+# 🩻 COVID-19 Chest X-ray Classifier
 
-This project uses a Convolutional Neural Network (CNN) to classify chest X-ray images into three categories:
+A deep learning web app that classifies chest X-ray or CT scan images into:
+- 🦠 **COVID-19 Positive**
+- ✅ **Normal**
+- 🤒 **Viral Pneumonia**
 
-- **COVID-19**
-- **Normal**
-- **Viral Pneumonia**
-
-The model is trained and evaluated on a publicly available dataset of X-ray images.
-
----
-
-## 📂 Dataset
-
-The dataset used is the [COVID19 Radiography Database](https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database), which includes:
-
-- COVID-19 images
-- Normal (healthy) images
-- Viral Pneumonia images
-
-Folder structure:
-
-Covid19-dataset/
-├── train/
-│ ├── Covid/
-│ ├── Normal/
-│ └── Viral Pneumonia/
-└── test/
-├── Covid/
-├── Normal/
-└── Viral Pneumonia/
----
-
-## 🧪 Model Architecture
-
-The CNN architecture includes:
-
-- 3 Convolutional + MaxPooling blocks
-- 1 Fully connected Dense layer
-- Output layer with softmax for classification
-
-The model uses `categorical_crossentropy` loss and `Adam` optimizer.
+This project uses a **Convolutional Neural Network (CNN)** built with **TensorFlow** and **Keras**, wrapped in a professional **Streamlit** UI.
 
 ---
 
-## 📈 Results
+## 🔍 Preview
 
-The notebook includes:
-
-- Model training (`model.fit`)
-- Accuracy/loss curves
-- Sample predictions with actual vs. predicted labels
+![App Preview](app_preview.png)
 
 ---
 
-## 🚀 How to Run
+## 🧠 How It Works
 
-1. Clone the repo:
-    ```bash
-    git clone https://github.com/yourusername/covid19-cnn-classifier.git
-    cd covid19-cnn-classifier
-    ```
-
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Download and place the dataset into `Covid19-dataset/`.
-
-4. Run the notebook:
-    ```bash
-    jupyter notebook covid19_cnn.ipynb
-    ```
+1. Upload a chest X-ray or CT scan (`.png`, `.jpg`, `.jpeg`)
+2. The image is resized to `224x224` and normalized
+3. A trained CNN model predicts one of three classes:
+   - COVID-19 Positive
+   - Normal
+   - Viral Pneumonia
+4. The app displays the result and the confidence percentage, along with a horizontal bar chart
 
 ---
 
-## 🛠️ Requirements
+## 🧪 Model Details
 
-See [`requirements.txt`](./requirements.txt)
-
----
-
-## 📌 License
-
-This project is open source under the MIT License.
+- **Input shape**: 224x224x3 RGB
+- **Framework**: TensorFlow + Keras
+- **Model type**: CNN (Convolutional Neural Network)
+- **Output**: Softmax layer with 3 classes
+- **Dataset**: [COVID-19 Radiography Database](https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database)
 
 ---
 
-## 🤝 Credits
+## 🛠️ Tech Stack
 
-- Dataset from [Kaggle](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database)
-- Built with TensorFlow & Keras
+- **Frontend**: Streamlit
+- **Backend/Model**: TensorFlow, Keras
+- **Visualization**: Matplotlib
+- **Image Processing**: Pillow (PIL), NumPy
+
+---
+
+## 📂 Project Structure
+
+covid19-cnn-classifier/
+│
+├── app.py # Streamlit app code
+├── covid19_cnn_model.h5 # Trained CNN model
+├── requirements.txt # Python package dependencies
+├── runtime.txt # Python version for deployment
+├── packages.txt # System-level packages for deployment
+├── README.md # This file
+├── .gitignore
+└── images/
+└── app_preview.png
+---
+
+## 📦 Installation & Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/Ziad-el3shry/covid19-cnn-classifier.git
+cd covid19-cnn-classifier
+
+# Create virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # or venv\\Scripts\\activate on Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
+💡 Features
+    📤 Upload image interface
+    🧠 Real-time deep learning prediction
+    📊 Confidence visualization
+    🎨 Dark-themed professional UI
+    ℹ️ About tab with project details
+
+⚠️ Disclaimer
+    This app is for educational and research purposes only. It is not a medical diagnostic tool and should not be used for clinical decisions.
+
+👨‍💻 Developed by
+    Ziad Attia
+    📧 Email: ziadel3shry123@gmail.com
+    🔗 Linkedin:https://www.linkedin.com/in/ziad-attia-4b1843241/
