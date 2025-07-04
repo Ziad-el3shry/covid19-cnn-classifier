@@ -1,4 +1,5 @@
-tensorflow
-matplotlib
+streamlit
+tensorflow==2.12.0
 numpy
-keras
+pillow
+matplotlib
